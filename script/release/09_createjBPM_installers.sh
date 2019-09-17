@@ -2,11 +2,7 @@
 
 # this script build the jbpm-installer and jbpm-installer full
 
-if [ "$target" == "public" ]; then
-   URLgroup="public-jboss"
-else
-   URLgroup="kie-group"
-fi
+URLgroup="public-jboss"
 
 createJbpmInstaller(){
         # download and unzip the jbpm-installer-<version>.zip
@@ -47,4 +43,3 @@ if [[ $version == *"Final"* ]] ;then
 else
         createJbpmInstaller
 fi
-
